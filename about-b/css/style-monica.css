@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+ID+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-red: #FF0000;
+    --fundo-page: #00030c;
+    --botao-hover: #00002E;
+    --botao-visited:#191970;
+    --botao-active:#FF4500;
+    --botao-section-terciario:#051933;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo-page);
+    color: var(--branco-principal);
+}
+
+
+.fundo-01 {
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;     /*align-items: center; alinha no centro da coluna*/
+    text-align: center;
+}
+
+.container__principal {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+    
+
+
+}
+
+.container__section {
+    margin: 0 4%;
+}
+
+.top__button  {
+    font-family:   "Bebas Neue", serif;
+    font-size: 1rem;
+    background-color: var(--botao-red);
+    border-radius: 8px;
+    color: #FFD700;
+    padding: 0.670em;
+    display: block; /*bom para alinhamento*/
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 7em;
+    width: 40%;
+    }
+
+    .top__button:hover {background-color: #00002E;} 
+    .top__button-2:hover {background-color: #00002E;} 
+    
+    
+
+.top__button-2 {
+    font-family: "Bebas Neue", serif;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    border-radius: 10px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block; /*bom para alinhamento*/
+    margin-bottom: 1em;
+    margin-left: 6.5em;
+    font-size: 1rem;
+    padding: 1em;
+    text-align: center;
+    width: 40%;
+}
+
+.text-decorat {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+/*logomarca do topo*/
+.logo__topo {
+    margin: 5em 2em -3em 1em;
+    
+}
+
+/* (2º) container secundario | monitor */
+
+
+.container__secundario { /*section:conteiner__caixa*/
+
+    display:flex;
+    margin: 6em 6em;
+    
+}
+
+.secundario__imagem {
+    width: 30%;
+}
+
+.container__texto__monitor {
+    
+    align-items:center;
+    margin: 0 4%;
+    
+    
+}
+
+.descricao__titulo-01 {
+
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;             /*margem do texto entre o paragrafo.*/
+    margin-top: 6em;
+}
+
+.descricao__palagrafo {
+    color: var(--cinza-secundario);
+}
+
+/*terceria section*/
+/*Reotilizando o código do conteiner principal: primeiro container*/
+.terceiro__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+    gap: 5px;
+    
+    
+}
+
+.terceiro__container__div {
+ margin: 0 6em;
+ padding: 1em 0 1em;
+}
+
+.word {
+    font-family: "Bebas Neue", serif;
+    color: var(--cinza-secundario);
+    }
+
+.botao__terciario {
+     /*display: block;8/ /*bom para alinhamento*/
+    display: inline-block;
+    font-family:   "Bebas Neue", serif;
+    font-size: 1rem;
+    background-color: #082951;
+    border-radius: 10px;
+    color:var(--cinza-secundario);
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1em;
+    }
+
+/*About: 4º section*/
+
+.container-4 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding-left: 0%;
+    margin-top: 0.2em;
+    gap: 5px;
+}
+
+.div__container-4 {
+    margin: 0 6rem;
+    padding-top: 2rem;
+}
+
+.title-4 {
+font-family:"Bebas Neue", serif ;
+font-weight: 200;
+}
+
+.word-4 {
+color: var(--cinza-secundario);
+}
+
+.imagem-4 {
+    margin: 0 10em;
+    padding-top: 0;
+}
+
+/* trabalhando com os 03 dispositivos: TVs - computadores - celulares*/
+
+.dispositivos__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;  /* Retira os pontos das listas... */
+    margin: 4em 0;
+}
+
+.dispositivos {
+    text-align: center;      /*  =>Alinha o texto no centro<=  */
+    
+}
+
+.list__item {
+
+}
+
+.dispositivos__titulo {
+    font-family: "Bebas Neue", serif;
+    font-weight: 200;
+    color: var(--cinza-secundario);
+}
+
+/*footer01*/
+
+.rodape__logo {
+    margin: 0;
+    padding: 0;
+}
+.rodape {
+    /*background-color: #FF4500;*/
+    border: ridge;
+    color: var(--cinza-secundario);
+    padding: 2em;
+    text-align: center;
+    margin-top: 2em;
+    margin: auto;
+    }
+
+    .rodape__lista {
+    
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0,875em;
+        
+        
+
+    }
+
+    .nav {
+        text-decoration: none;
+        
+    }
+    /*
+    .lista__link a:link {color: var(--botao-section-terciario);}
+    .lista__link a:hover {color:#FFD700; }
+    .lista__link a:visited { color: #b5cbd3;}
+    */
+    .nav:link { color:#FF4500;}
+    .nav:visited {color: #b5cbd3;}
+    .nav:hover {color:#FFD700;}
+
+    
+/*fim do footer01*/
+
+/*=============================================*/
+
+/* footer02*/
+.footer__02 {
+    background-color: var(--botao-red);
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+.footer__02 a {
+    text-decoration: none;
+    color: white;
+}
+.footer__02 p {
+    margin-bottom: 5px;
+}
+.footer__02-div {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.footer__02-div-1, .footer__02-div-2, .footer__02-div-3, .footer__02-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.footer__02 span{
+    font-size: 20px;
+    color: white;
+}
+.footer__02-direitos{
+    width: calc(100% - 20px);
+    background-color: rgb(32, 31, 31);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .footer__02-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+/* fim do footer02 */
+
+
+
+

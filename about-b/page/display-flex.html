@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ico/favicon-2.ico" type="image/x-icon">
+    <title>Display-flex</title>
+
+    <style>
+        * { margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 100%;
+            margin: 10px;
+            padding: 5px;
+        }
+        .container-01 {
+            border: solid 1px red;
+            margin: 20px;
+            
+        }
+        .item {
+            border: solid 1px blue;
+        }
+
+        h1 {font-size: 1.375rem;}
+        h2 {font-size: .9375rem;} 
+        h3 {font-size: .9365rem;} 
+        h4 {font-size: .8375rem;}  
+        h1, h2, h3, h4 { font-weight: 500;}
+
+        footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(40, 30, 179);
+  color: rgb(239, 238, 243);
+}
+
+.footer {
+   display: flex; 
+  background-color:  rgb(49, 40, 175); /*  */
+  border: rgb(235, 233, 240);
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <nav>
+        <ul>
+            <!--subpastas para voltar (../../)-->
+            <li><a href="../../index.html">Pagína inicial</a></li>
+        </ul>
+        </nav>
+    </header>
+    <h1>Display-block:</h1>
+
+    <div class="container-01">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+    </div>
+    <h1>Display-flex:</h1>
+
+    <div class="container-01" style="display: flex;">
+
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+
+    </div>
+
+    <h2>Flex-direction: row (padrão):</h2>
+
+    <div class="container-01" style=" 
+    display: flex;
+    flex-direction: row;
+    ">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+    </div>
+
+    <h2>Flex-direction: row-reverse:</h2>
+
+    <div class="container-01" style=" 
+    display: flex;
+    flex-direction: row-reverse;
+    ">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+    </div>
+
+    <h2>Flex-direction: column:</h2>
+
+    <div class="container-01" style=" 
+    display: flex;
+    flex-direction: column;
+    ">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+    </div>
+
+    <h2>Flex-direction: column-reverse:</h2>
+
+    <div class="container-01" style=" 
+    display: flex;
+    flex-direction: column-reverse;
+    ">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+    </div>
+
+    <h2>Flex-wrap (Padrão) => row:</h2>
+    <h3>flex-wrap: nowrap;</h3>
+    <div class="container-01" style=" 
+    max-width: 200px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap:nowrap;
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        
+    </div>
+
+    <h2>Flex-wrap: wrap; (wrap)</h2>
+    <div class="container-01" style=" 
+    max-width: 200px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        
+    </div>
+
+    <h2>flex-wrap: wrap-reverse; (row)</h2>
+    <h3>Aqui acontece uma reversão das linhas...</h3>
+    <div class="container-01" style=" 
+    max-width: 200px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap-reverse;
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        
+    </div>
+
+    <h2>flex-wrap: wrap; (Padrão) => column: Você vai utilizar 90% das vezes! </h2>
+    <h3>flex-wrap (nowrap, wrap, wrap-reverse)</h3>
+    <h4>.elementoPai {flex-directin: column;
+                    flex-wrap: wrap;}</h4>
+    <div class="container-01" style=" 
+    max-height: 40px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        
+    </div>
+
+    <h2>flex-wrap: wrap; (Padrão) => column</h2>
+    <h2>usado aqui => flex-wrap: wrap-reverse;</h2>
+    <h3>flex-wrap (nowrap, wrap, wrap-reverse)</h3>
+    <h4>flex-directin: column;</h4>
+    <div class="container-01" style=" 
+    max-height: 40px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap-reverse;
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        
+    </div>
+    <h1>Vamor trabalhar agora com <mark>flex-flow:</mark></h1><br>
+    <h2>flex-flow: row nowrap (Comportamento Padrão).</h2><br>
+    <h2>usado aqui => flex-flow: row nowrap;</h2><br>
+    <h3>flex-flow (column | column-reverse | nowrap | wrap | wrap-reverse)</h3>
+    <p>Flex-box, disponibiliza uma propriedade chamada “flex-flow”, que funciona como uma sintaxe de fuga, uma forma abreviada, uma forma mais enxuta de definir os parâmetros de “flex-direction” é “flex-wrap” de um flex-conteiner...
+    </p>
+    <p>No caso do flex-flow, utilizando apenas uma propriedade, nós vamos passar dois parâmetros distintos.
+    </p>
+    <p>Nós vamos passar o atributo desejado de (flex-direction), na primeira posição e o atributo desejado de (flex-wrap), na segunda posição.
+    </p>
+    <p>Então é só realmente mais uma forma enxuta, mais elegante e mais curta de definir essas propriedades.
+    </p>
+    <p>No começo talvez seja meio complicado de trabalhar com (flex-flow), mas com o tempo é natural migrar para (flex-flow), fica a seu critério.
+    </p>
+    <p>As duas formas estão corretas, a única diferença é que o (flex-flow) é mais simples e mais fácil de ser utilizado e mais curto. Deixa seu código mais enxuto.
+    </p>
+    <h2>Aqui umas informações...</h2>
+    <p>flex-direction: => row | row-reverse.
+        flex-wrap: => nowrap | wrap | wrap-reverse.
+        Esses dois temas "flex-direction" e "flex-direction" e "flex-wrap", ja estudados.
+        flex-flow => column | nowrap | wrap | wrap-reverse.
+        e também => column-reverse | 	
+        </p><br>
+        <h1>
+            <code>.seletor-pai {
+                max-height: 40px;
+                displey:flex;
+                 flex-flow: row nowrap; }
+                </code>
+        </h1>
+    <div class="container-01" style=" 
+    max-height: 40px;
+    display: flex;
+    flex-flow: row norwap;
+    
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        
+    </div>
+    <h3>Vamos trabalhar com => flex-flow: row wrap.</h3>
+    <h4>É o comportamento de quebra de linha...</h4>
+    <div class="container-01" style=" 
+    max-width: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    
+    "> 
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        
+    </div>
+
+    <h3>Vamos trabalhar com => flex-flow: column wrap-reverse;</h3>
+    <h4>É o comportamento é na altura que da quebra em colunas.</h4>
+    <div class="container-01" style=" 
+    max-height: 88px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    
+    "> 
+    
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+
+        </div>
+
+    <footer>
+    <article>
+        <article>
+        <p>Autor: Antônio Cezar...</p>
+    </article>
+    <address>
+        <p><a href="Antônio Cezar: ntncezar@gmail.com" class="footer">ntncezar@gmail.com</a></p>
+    </address>
+        
+    </footer>
+</body>
+</html>

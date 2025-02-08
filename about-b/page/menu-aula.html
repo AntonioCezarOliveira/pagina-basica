@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="shortcut icon" href="../ico/favicon-2.ico" type="image/x-icon">
+    <title>Menus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+ID+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-red: #FF0000;
+    --fundo-page: #00030c;
+    --fundo-page2: #010616;
+    --botao-hover: #00002E;
+    --botao-visited:#191970;
+    --botao-active:#FF4500;
+    --funto-botao: #FFFF00;
+    --botao-section-terciario:#051933;
+}
+            body {
+                background-color: var(--fundo-page) ;
+            }
+
+
+            a {text-decoration: none;}
+
+            .nav :link { color: var(--fundo-page2);}
+            .nav :visited { color: var(--botao-hover)}
+            .nav :hover { 
+                color: var(--fundo-page);
+                background-color: var(--funto-botao) ;
+            }
+
+        ul.nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-style: none;
+            
+            display: flex;
+            gap: .09rem;
+            margin-left: 3rem;
+        }
+        
+        .nav li {
+            display: inline;
+        }
+
+        .nav a {
+            display: inline-block;
+            border: 1px outset #000;
+            padding: 5px 15px 5px 15px;
+            background-color:var(--fundo-page);
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            color: #191970;
+            
+        }
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="../../index.html" class="nav">Home</a></li>
+                <li><a href="align-item.html" class="nav">align-item</a></li>
+                <li><a href="aula-alura.html" class="nav">alura</a></li>
+                <li><a href="display-block.html" class="nav">Display-block</a></li>
+                <li><a href="display-flex.html" class="nav">Display-flex</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

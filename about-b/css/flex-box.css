@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-funto: #024351;
+}
+body{
+  min-height: 200px;
+  font-family: 'Bungee';
+}
+
+ul{
+  border: solid 1px #ccc;
+  font-family: 'Bungee';
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  cursor: pointer;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 35px auto;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  color: #E46357;
+  background-color: #C9ECFF;
+}
+
+li:hover{
+  opacity: 0.5;
+  color: #EA675B;
+}
+
+
+.fa{
+  grid-area: 1 / 1 / 3 / 2;
+  text-align: center;
+  font-size: 25px;
+}
+
+.title{
+  font-size: 18px;
+}
+
+.description{
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #272727;
+}
+
+
+li, .fa, .title, .description{
+  border: 1px solid black;
+}
+
+.container{
+  display: grid;
+  color: #272727;
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto auto 70px;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header{
+  padding: 10px;
+  background-color: #8BBFDC;
+  grid-area: header;
+}
+
+aside{
+  padding: 10px;
+  background-color: #87D8B1;
+  grid-area: aside;
+}
+
+main{
+  padding: 10px;
+  background-color: #FDE483;
+  grid-area: main;
+  height: 200px;
+}
+
+footer{
+  padding: 10px;
+  background-color: #F97A6E;
+  grid-area: footer;
+}

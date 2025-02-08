@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+ID+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+        :root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-red: #FF0000;
+    --fundo-page: #00030c;
+    --fundo-page2: #010616;
+    --botao-hover: #00002E;
+    --botao-visited:#191970;
+    --botao-active:#FF4500;
+    --funto-botao: #fafa08;
+    --botao-section-terciario:#051933;
+}
+            
+
+
+            a {text-decoration: none;}
+
+            .nav :link { color:#00002E;}
+            .nav :visited { color: var(--botao-hover)}
+            .nav :hover { 
+                color: var(--fundo-page);
+                background-color: var(--funto-botao) ;
+                border-radius: 2px;
+                text-align: center;
+            }
+
+             
+
+        ul.nav {
+            
+            list-style: none;
+            padding: 0;
+            margin: 0;
+           /* border-style: none;*/
+            
+            display: flex;
+            gap: .09rem;
+           
+        }
+        
+        .nav li {
+            display: inline;
+        }
+
+        .nav a {
+           
+            /*border: 1px outset #000;*/
+            padding: 5px 15px 0px 5px;
+            background-color:var(--fundo-page);
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            color: #00002E;
+            
+        }
+
+        .home a:active {
+            background-color: #FF4500;
+        }
+        
+
+        
